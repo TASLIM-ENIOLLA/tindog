@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TinDog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/dog-img.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="FONT AWESOME/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <section class="a">
+        <div class="header">
+            <div>tindog</div>
+            <div class="menu_btn">
+                <span class="fa fa-navicon fa-2x"></span>
+            </div>
+            <div class="menu">
+                <a href="#contact" class="text-white btn">contact</a>
+                <a href="#pricing" class="text-white btn">pricing</a>
+                <a href="#download" class="text-white btn">download</a>
+            </div>
+        </div>
+        <div class="header2">
+            <div>
+                <div class="">meet new and interesting dogs nearby</div>
+                <div class="">
+                    <button class="btn btn-outline-dark bg-dark text-light text-capitalize px-3">
+                        <span class="fab fa-apple"></span>
+                        download
+                    </button>
+                    <button class="btn btn-outline-light text-capitalize px-3">
+                        <span class="fab fa-google-play"></span>
+                        download
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="images/iphone6.png" alt="iphone6">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="two">
+            <div class="cardy">
+                <span class = "fa fa-check fa-2x"></span>
+                <div class="text-dark">Easy to use</div>
+                <div class="text-muted">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, necessitatibus?
+                </div>
+            </div>
+            <div class="cardy">
+                <span class = "fas fa-bullseye fa-2x"></span>
+                <div class="text-dark">Elite Clientele</div>
+                <div class="text-muted">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, necessitatibus?
+                </div>
+            </div>
+            <div class="cardy">
+                <span class = "fas fa-heart fa-2x"></span>
+                <div class="text-dark">Guaranteed to work</div>
+                <div class="text-muted">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, necessitatibus?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="imgs" id = "contact">
+        <div>
+            <img src="images/TechCrunch.png" alt="">
+            <img src="images/tnw.png" alt="">
+            <img src="images/bizinsider.png" alt="">
+            <img src="images/mashable.png" alt="">
+        </div>
+    </section>
+
+    <section class="plac" id = "pricing">
+        <div class="plac_ttl">
+            <div>a plan for every dog's needs</div>
+            <div>simple and affordable price plan for you and your dog</div>
+        </div>
+        <div>
+            <div class="cardy2">
+                <div>chihuahua</div>
+                <div>
+                    <div>free</div>
+                    <div>
+                        <span>5 matches per day</span>
+                        <span>10 messages per day</span>
+                        <span>Unlimited app usage</span>
+                    </div>
+                </div>
+                <div class="btn btn-outline-dark">
+                    sign up
+                </div>
+            </div>
+            <div class="cardy2">
+                <div>labrador</div>
+                <div>
+                    <div>$49 / mo</div>
+                    <div>
+                        <span>Unlimited matches</span>
+                        <span>Unlimited messages</span>
+                        <span>Unlimited app usage</span>
+                    </div>
+                </div>
+                <div class="btn btn-outline-dark">
+                    sign up
+                </div>
+            </div>
+            <div class="cardy2">
+                <div>mastiff</div>
+                <div>
+                    <div>$99 / mo</div>
+                    <div>
+                        <span>Priority listing</span>
+                        <span>Unlimited matches</span>
+                        <span>Unlimited messages</span>
+                    </div>
+                </div>
+                <div class="btn btn-outline-dark">
+                    sign up
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lcl" id = "download">
+        <div>
+            <div>find the true love of your dog's life today</div>
+            <div>
+                <button class="btn btn-outline-dark bg-dark text-light text-capitalize px-3 mx-2">
+                    <span class="fab fa-apple"></span>
+                    download
+                </button>
+                <button class="btn btn-outline-light text-capitalize px-3 mx-2">
+                    <span class="fab fa-google-play"></span>
+                    download
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="foot">
+        <div>
+            <span class="fab fa-twitter mx-3"></span>
+            <span class="fab fa-facebook-f mx-3"></span>
+            <span class="fab fa-instagram mx-3"></span>
+            <span class="fa fa-envelope mx-3"></span>
+        </div>
+        <div>&copy copyright 2020 Tindog</div>
+    </section>
+
+    <script>
+        var state = false;
+        var heightOfLinks = () =>{
+            no_of_elemts = document.querySelectorAll(".menu > *").length;
+            unitHeight = document.querySelector(".menu > *").offsetHeight;
+            return unitHeight * no_of_elemts;
+        }
+        document.querySelector(".menu_btn").addEventListener(
+            "click",
+            function(){
+                if(state){
+                    document.querySelector(".menu").style.display = "none";
+                    state = false;
+                }
+                else{
+                    document.querySelector(".menu").style.display = "block";
+                    state = true;
+                }
+            }
+        );
+        window.pageYOffset = "1500px";
+    </script>
+</body>
+</html>

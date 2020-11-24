@@ -1,0 +1,245 @@
+@font-face{
+    font-family: "permanent marker";
+    src: url(../fonts/permanent_marker.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    min-width: 350px;
+    background: #fff;
+    transition: all 1s ease;
+}
+body{
+    position: relative;
+    top: 0;
+}
+a{
+    color: inherit;
+}
+.a{
+    background: #ff4c68;
+    color: white;
+    display: flex;
+    padding: 35px 15%;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.menu_btn{
+    display: none;
+}
+.header > div:first-child{
+    flex: 1;
+    font-size: 2.7rem;
+}
+.menu > a{
+    font-size: 1.2rem;
+    margin: 0 12px;
+    text-transform: capitalize;
+}
+.header2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.header2 > div{
+    /* border: thin solid red; */
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+.header2 > div:last-child{
+    min-height: 300px;
+}
+.header2 > div:first-child{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.header2 img{
+    position: absolute;
+    transform: rotate(25deg) translate(-7vw, 0%);
+    height: 500px;
+    margin-top: 30px;
+}
+.two{
+    display: flex;
+    padding: 5rem 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardy{
+    padding: 10px;
+    max-width: 300px;
+    margin: 10px 0;
+}
+.cardy > div:last-child{
+    font-size: 1rem;
+    text-align: center;
+}
+.cardy > div:nth-child(2){
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 5px;
+}
+.cardy > span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #ff4c68;
+    margin: auto;
+}
+.imgs{
+    border: 10px solid #ff4c68;
+    padding: 5rem;
+}
+.imgs > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imgs img{
+    width: 20%;
+    margin: 30px;
+    width: 150px;
+}
+.plac{
+    padding: 5rem 1rem;
+}
+.plac > div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.plac_ttl > div:first-child{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+}
+.plac_ttl > div:nth-child(2){
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.plac_ttl ~ div:nth-child(2){
+    padding: 5rem 1rem;
+}
+.cardy2{
+    border: thin solid gainsboro;
+    text-align: center;
+    border-radius: .5rem;
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 300px;
+    flex: 1;
+    margin: 20px 3%;
+    box-shadow: 0px 15px 30px rgba(200, 200, 200, 0.9);
+}
+.cardy2 > div:first-child{
+    padding: 20px;
+    background: gainsboro;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.cardy2 > div:nth-child(2) > div:first-child{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+.cardy2 > div:nth-child(2) > div:last-child > span{
+    display: block;
+    padding: 5px 0;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.cardy2 > div:last-child{
+    padding: 15px 0;
+    margin: 1rem;
+    border-radius: 10px;
+    font-weight: 900;
+    text-transform: capitalize;
+    border: thin solid gainsboro;
+    cursor: pointer;
+    width: 90%;
+    /* display: block; */
+}
+.lcl{
+    background: #ff4c68;
+    padding: 5rem 1rem;
+    color: white;
+    text-align: center;
+}
+.lcl > div:first-child > div:first-child{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.foot{
+    padding: 5rem 1rem;
+}
+.foot > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot > div:last-child{
+    padding: 15px 0;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+@media (max-width: 900px){
+    .header2 img{
+        transform: rotate(0deg) translate(0%, 0%);
+        text-align: center;
+        position: relative;
+    }
+    .header2{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 810px){
+    .menu{
+        display: none;
+        min-width: 100%;
+        padding-bottom: 30px;
+        /* background: rgba(220, 220, 220, 0.5); */
+    }
+    .menu > a{
+        display: block;
+        text-align: center;
+        border-bottom: thin solid white;
+    }
+    .menu_btn{
+        display: block;
+    }
+}
+@media (min-width: 810px){
+    .menu{
+        display: block !important;
+    }
+}
